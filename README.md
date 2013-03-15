@@ -1,4 +1,4 @@
-<h2><b>Shiro_Blog
+<h2><b>SHIRO
 ==========
 *Site underconstruction*
 
