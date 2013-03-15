@@ -1,0 +1,35 @@
+// Name: LAYOUT FILE
+// Author: David Mandeeli
+// Date Modified: March 7, 2013
+
+// ==============================================================================
+
+// SUSY SETTINGS
+
+@import "susy"
+
+$total-columns  : 14
+$column-width   : 4em
+$gutter-width   : 1em
+$grid-padding   : $gutter-width
+
+.main
+	+container($total-columns)
+	// +susy-grid-background
+
+.whats
+	+span-columns(6.8,14)
+
+.platforms
+	+span-columns(14,14)
+
+.w-cont
+	+span-columns(4.74,14)
+
+.boxy
+	+span-columns(4.74,14)
+	margin: 0 auto
+
+
+
+
