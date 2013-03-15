@@ -1,6 +1,5 @@
-<h2><br>Shiro_Blog
+<h2><b>Shiro_Blog
 ==========
-
 *Site underconstruction*
 
 My personal blog
