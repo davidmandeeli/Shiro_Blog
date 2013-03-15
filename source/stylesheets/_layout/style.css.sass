@@ -1,471 +1,471 @@
 // HEADER
 
 header
-	position: fixed
-	left: 0
-	top: 0
-	width: 280px
-	height: 100%
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
-	border-right: 1px solid rgba(0, 0, 0, 0.5) 
-	box-shadow: 1px 0 1px rgba(0, 75, 100, 0.3)
-	z-index: 9999
-	display: inline
+  position: fixed
+  left: 0
+  top: 0
+  width: 280px
+  height: 100%
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+  border-right: 1px solid rgba(0, 0, 0, 0.5) 
+  box-shadow: 1px 0 1px rgba(0, 75, 100, 0.3)
+  z-index: 9999
+  display: inline
 
-	#main-header
-		width: 100%
-		max-width: 69em
-		margin: 0 auto
+  #main-header
+    width: 100%
+    max-width: 69em
+    margin: 0 auto
 
-		#logo-cont
-			text-align: center
-			display: inline
-			position: relative
-			cursor: pointer
-			top: 0
-			margin: 0
-			-webkit-touch-callout: none
-			-webkit-user-select: none
-			-khtml-user-select: none
-			-moz-user-select: none
-			-ms-user-select: none
-			user-select: none
+    #logo-cont
+      text-align: center
+      display: inline
+      position: relative
+      cursor: pointer
+      top: 0
+      margin: 0
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
 
-			h1.logo
-				display: block
-				color: #fff
-				font-size: 3em
-				font-family: "Nexa-Bold"
-				font-weight: 600
-				text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.50)
-				border-bottom: 1px solid rgba(0, 75, 100, 0.8)
-				width: 90%
-				margin: 0.2em auto 0
+      h1.logo
+        display: block
+        color: #fff
+        font-size: 3em
+        font-family: "Nexa-Bold"
+        font-weight: 600
+        text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.50)
+        border-bottom: 1px solid rgba(0, 75, 100, 0.8)
+        width: 90%
+        margin: 0.2em auto 0
 
-			p.desc
-				color: #fff
-				font-size: 0.88em
-				font-family: "Nexa-Light"
-				text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.10)
-				border-bottom: 1px solid rgba(0, 75, 100, 0.5)
-				width: 90%
-				margin: 0 auto
-				padding: 0.5em 0
+      p.desc
+        color: #fff
+        font-size: 0.88em
+        font-family: "Nexa-Light"
+        text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.10)
+        border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+        width: 90%
+        margin: 0 auto
+        padding: 0.5em 0
 
-		#nav
-			position: absolute
-			margin: 0 auto
-			bottom: 0
-			width: 100%
-			padding: 0
+    #nav
+      position: absolute
+      margin: 0 auto
+      bottom: 0
+      width: 100%
+      padding: 0
 
-			li
-				width: 100%
-				margin: 0 auto
-				text-align: center
-				display: block
-				position: relative
-				cursor: pointer
-				-webkit-touch-callout: none
-				-webkit-user-select: none
-				-khtml-user-select: none
-				-moz-user-select: none
-				-ms-user-select: none
-				user-select: none
-				text-shadow: -2px 2px 1px rgba(73, 150, 150, 0.50)
-				border-top: 1px solid rgba(0, 75, 100, 0.3)
-				box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7)
+      li
+        width: 100%
+        margin: 0 auto
+        text-align: center
+        display: block
+        position: relative
+        cursor: pointer
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-shadow: -2px 2px 1px rgba(73, 150, 150, 0.50)
+        border-top: 1px solid rgba(0, 75, 100, 0.3)
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7)
 
-				a
-					display: block
-					color: #fff
-					font-size: 1.2em
-					font-family: "Nexa-Light"
-					text-decoration: none 
-					padding: 0
-					margin: 0
-					padding: 0.3em 0
-					text-decoration: none
-					outline: 0
-					+transition-property(all)
-					+transition-duration(0.3s)
-					+transition-timing-function(ease-in)
+        a
+          display: block
+          color: #fff
+          font-size: 1.2em
+          font-family: "Nexa-Light"
+          text-decoration: none 
+          padding: 0
+          margin: 0
+          padding: 0.3em 0
+          text-decoration: none
+          outline: 0
+          +transition-property(all)
+          +transition-duration(0.3s)
+          +transition-timing-function(ease-in)
 
-				.active
-					-webkit-touch-callout: none
-					-webkit-user-select: none
-					-khtml-user-select: none
-					-moz-user-select: none
-					-ms-user-select: none
-					user-select: none
-					background: #001222
+        .active
+          -webkit-touch-callout: none
+          -webkit-user-select: none
+          -khtml-user-select: none
+          -moz-user-select: none
+          -ms-user-select: none
+          user-select: none
+          background: #001222
 
 // Content
 
 #content
-	position: relative
-	width: 100%
-	max-width: 900px
-	height: 100%
-	max-height: 800px
-	margin: 2em auto
+  position: relative
+  width: 100%
+  max-width: 900px
+  height: 100%
+  max-height: 800px
+  margin: 2em auto
 
-	h1.title	
-		text-align: center
-		position: relative
-		width: 100%
-		max-width: 200px
-		background: #052A3C
-		padding: 0.1em
-		text-align: justified
-		font-size: 1.2em
-		font-family: "Nexa-Bold"
-		color: #fff
-		text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-		top: 0
-		left: -5px
-		margin: 0.5em 0 0.5em 
-		display: block
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.3)
+  h1.title  
+    text-align: center
+    position: relative
+    width: 100%
+    max-width: 200px
+    background: #052A3C
+    padding: 0.1em
+    text-align: justified
+    font-size: 1.2em
+    font-family: "Nexa-Bold"
+    color: #fff
+    text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+    top: 0
+    left: -5px
+    margin: 0.5em 0 0.5em 
+    display: block
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3)
 
-	p.sub-title
-		position: relative
-		width: 100%
-		max-width: 572px
-		margin: 0 auto
-		padding: 0 0 1em
-		text-align: justified
-		font-size: 1.2em
-		font-family: "Nexa-Light"
-		color: #fff
-		text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+  p.sub-title
+    position: relative
+    width: 100%
+    max-width: 572px
+    margin: 0 auto
+    padding: 0 0 1em
+    text-align: justified
+    font-size: 1.2em
+    font-family: "Nexa-Light"
+    color: #fff
+    text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
 
-		span
-			font-family: "Nexa-Bold"
+    span
+      font-family: "Nexa-Bold"
 
-		.note
-			color: #8F0000
-			text-shadow: none
-			font-size: 0.9em
+    .note
+      color: #8F0000
+      text-shadow: none
+      font-size: 0.9em
 
-	.follow
-		font-size: 0.8em
-		font-style: italic
+  .follow
+    font-size: 0.8em
+    font-style: italic
 
-	#intro
-		position: relative
-		width: 100%
-		height: 100%
-		margin: 0 auto
-		border-top: 1px solid rgba(0, 75, 100, 0.5)
-		border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+  #intro
+    position: relative
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    border-top: 1px solid rgba(0, 75, 100, 0.5)
+    border-bottom: 1px solid rgba(0, 75, 100, 0.5)
 
-		p.first-lane
-		position: relative
-		width: 100%
-		margin: 0 auto
-		padding: 0
-		text-align: center
-		font-size: 1.5em
-		font-family: "Nexa-Light"
-		color: #fff
-		text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+    p.first-lane
+    position: relative
+    width: 100%
+    margin: 0 auto
+    padding: 0
+    text-align: center
+    font-size: 1.5em
+    font-family: "Nexa-Light"
+    color: #fff
+    text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
 
-		span.name
-			font-family: "Nexa-Bold"
-			font-size: 1.5em
+    span.name
+      font-family: "Nexa-Bold"
+      font-size: 1.5em
 
-		.dev
-			color: #49C2FF
-			font-family: "Nexa-Bold"
-			font-size: 1.8em
-		.des
-			color: #FFA500
-			font-family: "Nexa-Bold"
-			font-size: 1.8em
-		.note
-			color: #8F0000
-			text-shadow: none
-			font-size: 0.9em
+    .dev
+      color: #49C2FF
+      font-family: "Nexa-Bold"
+      font-size: 1.8em
+    .des
+      color: #FFA500
+      font-family: "Nexa-Bold"
+      font-size: 1.8em
+    .note
+      color: #8F0000
+      text-shadow: none
+      font-size: 0.9em
 
-	.whats
-		height: 100%
-		margin: 2em auto 0
-		border: 1px solid rgba(0, 0, 0, 0.5)
-		box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+  .whats
+    height: 100%
+    margin: 2em auto 0
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
 
-	.whats#build
-		float: left
+  .whats#build
+    float: left
 
-	.whats#use
-		float: right
+  .whats#use
+    float: right
 
-	.platforms
-		height: 100%
-		margin: 2em auto 0
-		border: 1px solid rgba(0, 0, 0, 0.5)
-		box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+  .platforms
+    height: 100%
+    margin: 2em auto 0
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
 
-	.boxy
-		height: 180px
-		z-index: 50
-		overflow: hidden
-		cursor: pointer
-		margin: 0 auto 2em
-		&:hover .hove
-			opacity: 1
-			display: block
-			top: -180px
+  .boxy
+    height: 180px
+    z-index: 50
+    overflow: hidden
+    cursor: pointer
+    margin: 0 auto 2em
+    &:hover .hove
+      opacity: 1
+      display: block
+      top: -180px
 
-	#how-work
-		position: relative
-		float: left
-		width: 100%
-		height: 100%
-		margin: 1.5em auto 0
-		border-top: 2px solid rgba(0, 75, 100, 1)
-	
-		h1	
-			text-align: center
-			position: relative
-			width: 290px
-			background: rgba(0, 18, 34, 1)
-			padding: 0.1em
-			text-align: justified
-			font-size: 2.2em
-			font-family: "Nexa-Bold"
-			color: #fff
-			top: -0.8em
-			margin: 0 auto
-			display: block
-			text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+  #how-work
+    position: relative
+    float: left
+    width: 100%
+    height: 100%
+    margin: 1.5em auto 0
+    border-top: 2px solid rgba(0, 75, 100, 1)
+  
+    h1  
+      text-align: center
+      position: relative
+      width: 290px
+      background: rgba(0, 18, 34, 1)
+      padding: 0.1em
+      text-align: justified
+      font-size: 2.2em
+      font-family: "Nexa-Bold"
+      color: #fff
+      top: -0.8em
+      margin: 0 auto
+      display: block
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
 
-		.w-cont
-			height: 100%
-			z-index: 50
-			cursor: pointer
-			margin: 0 auto 0.5em
+    .w-cont
+      height: 100%
+      z-index: 50
+      cursor: pointer
+      margin: 0 auto 0.5em
 
-			.discover
-				position: relative
-				width: 280px
-				margin: 0 auto
-				height: 100%
-			.design
-				position: relative
-				width: 280px
-				margin: 0 auto
-				height: 100%
-			.develop
-				position: relative
-				width: 280px
-				margin: 0 auto
-				height: 100%
+      .discover
+        position: relative
+        width: 280px
+        margin: 0 auto
+        height: 100%
+      .design
+        position: relative
+        width: 280px
+        margin: 0 auto
+        height: 100%
+      .develop
+        position: relative
+        width: 280px
+        margin: 0 auto
+        height: 100%
 
-			h3	
-				text-align: center
-				position: relative
-				width: 280px
-				text-align: justified
-				font-size: 1.2em
-				font-family: "Nexa-Light"
-				color: #fff
-				margin: 0 auto
-				padding: 0.2em 0
-				display: block
-				text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-				border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+      h3  
+        text-align: center
+        position: relative
+        width: 280px
+        text-align: justified
+        font-size: 1.2em
+        font-family: "Nexa-Light"
+        color: #fff
+        margin: 0 auto
+        padding: 0.2em 0
+        display: block
+        text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+        border-bottom: 1px solid rgba(0, 75, 100, 0.5)
 
-			p
-				color: white
-				font-family: "Nexa-Light"
-				font-size: 1em
-				font-style: italic
-				height: 100%
-				margin: 1em auto
-				position: relative
-				width: 90%
-				text-align: justified
+      p
+        color: white
+        font-family: "Nexa-Light"
+        font-size: 1em
+        font-style: italic
+        height: 100%
+        margin: 1em auto
+        position: relative
+        width: 90%
+        text-align: justified
 
 
-	#latest-works
-		position: relative
-		float: left
-		width: 100%
-		height: 100%
-		margin: 3em auto 0
-		border-top: 2px solid rgba(0, 75, 100, 1)
+  #latest-works
+    position: relative
+    float: left
+    width: 100%
+    height: 100%
+    margin: 3em auto 0
+    border-top: 2px solid rgba(0, 75, 100, 1)
 
-		h1	
-			text-align: center
-			position: relative
-			width: 370px
-			background: rgba(0, 18, 34, 1)
-			padding: 0.1em
-			text-align: justified
-			font-size: 2.2em
-			font-family: "Nexa-Bold"
-			color: #fff
-			top: -0.8em
-			margin: 0 auto
-			display: block
-			text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-			clear: both
+    h1  
+      text-align: center
+      position: relative
+      width: 370px
+      background: rgba(0, 18, 34, 1)
+      padding: 0.1em
+      text-align: justified
+      font-size: 2.2em
+      font-family: "Nexa-Bold"
+      color: #fff
+      top: -0.8em
+      margin: 0 auto
+      display: block
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      clear: both
 
-		.work
-			position: relative
-			width: 280px
-			margin: 0 auto
-			height: 163px
-			box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
-			opacity: 0.7
+    .work
+      position: relative
+      width: 280px
+      margin: 0 auto
+      height: 163px
+      box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
+      opacity: 0.7
 
-	.hove
-		position: relative
-		height: 200px
-		width: 280px
-		top: 0
-		margin: 0 auto
-		background: none repeat scroll 0 0 rgba(0, 13, 24, 0.9)
-		box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
-		opacity: 0
-		overflow: hidden
-		+transition-property(all)
-		+transition-duration(0.2s)
-		+transition-timing-function(ease-in)
+  .hove
+    position: relative
+    height: 200px
+    width: 280px
+    top: 0
+    margin: 0 auto
+    background: none repeat scroll 0 0 rgba(0, 13, 24, 0.9)
+    box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
+    opacity: 0
+    overflow: hidden
+    +transition-property(all)
+    +transition-duration(0.2s)
+    +transition-timing-function(ease-in)
 
-		h2
-			text-align: center
-			position: relative
-			padding: 0.4em 0.9em
-			font-size: 1.2em
-			font-family: "Nexa-Light"
-			color: #fff
-			text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-			margin: 1.2em auto 0
-			height: 30px
+    h2
+      text-align: center
+      position: relative
+      padding: 0.4em 0.9em
+      font-size: 1.2em
+      font-family: "Nexa-Light"
+      color: #fff
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      margin: 1.2em auto 0
+      height: 30px
 
-		a
-			display: block
-			position: relative
-			width: 100%
-			height: 100%
-			font-size: 6.8em
-			text-align: center
-			color: rgba(255, 255, 255, 0.9)
-			text-shadow: 0px 0px 1px rgba(0, 205, 255, 0.4)
-			margin: 0 auto
-			top: -28px
+    a
+      display: block
+      position: relative
+      width: 100%
+      height: 100%
+      font-size: 6.8em
+      text-align: center
+      color: rgba(255, 255, 255, 0.9)
+      text-shadow: 0px 0px 1px rgba(0, 205, 255, 0.4)
+      margin: 0 auto
+      top: -28px
 
-		p
-			color: white
-			font-family: "Nexa-Light"
-			font-size: 0.8em
-			font-style: italic
-			height: 100%
-			margin: 0 auto
-			position: absolute
-			top: 160px
-			width: 100%
-			text-align: center
+    p
+      color: white
+      font-family: "Nexa-Light"
+      font-size: 0.8em
+      font-style: italic
+      height: 100%
+      margin: 0 auto
+      position: absolute
+      top: 160px
+      width: 100%
+      text-align: center
 
-	#blog
-		position: relative
-		float: left
-		width: 100%
-		height: 100%
-		margin: 3em auto 0
-		border-top: 1px solid rgba(0, 75, 100, 0.5)
+  #blog
+    position: relative
+    float: left
+    width: 100%
+    height: 100%
+    margin: 3em auto 0
+    border-top: 1px solid rgba(0, 75, 100, 0.5)
 
-	.tweet_container
-		position: relative
-		width: 100%
-		max-width: 960px
-		height: 100%
-		margin: 2em auto
-		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
-		border: 1px solid rgba(0, 0, 0, 0.5)
-		box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-		float: left
+  .tweet_container
+    position: relative
+    width: 100%
+    max-width: 960px
+    height: 100%
+    margin: 2em auto
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
+    float: left
 
-		.he	
-			text-align: center
-			position: relative
-			width: 100px
-			background: #052A3C
-			padding: 0.1em
-			text-align: justified
-			font-size: 1.2em
-			font-family: "Nexa-Bold"
-			color: #fff
-			text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-			display: block
-			float: left
-			margin: 0
-			border-right: 1px solid rgba(0, 0, 0, 0.5)
+    .he 
+      text-align: center
+      position: relative
+      width: 100px
+      background: #052A3C
+      padding: 0.1em
+      text-align: justified
+      font-size: 1.2em
+      font-family: "Nexa-Bold"
+      color: #fff
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      display: block
+      float: left
+      margin: 0
+      border-right: 1px solid rgba(0, 0, 0, 0.5)
 
-		#tweet
-			color: white
-			font-family: "Nexa-Light"
-			font-size: 1.1em
-			font-style: italic
-			height: 100%
-			margin: 0 0 0 7.2em
-			position: absolute
-			text-align: left
+    #tweet
+      color: white
+      font-family: "Nexa-Light"
+      font-size: 1.1em
+      font-style: italic
+      height: 100%
+      margin: 0 0 0 7.2em
+      position: absolute
+      text-align: left
 
-		ul
-			height: 100%
-			width: 100%
-			li
-				top: 0.4em
-				width: 100%
-				height: 100%
+    ul
+      height: 100%
+      width: 100%
+      li
+        top: 0.4em
+        width: 100%
+        height: 100%
 
-	ul 
-		margin: 0
-		padding: 0
+  ul 
+    margin: 0
+    padding: 0
 
-	li
-		width: 90%
-		margin: 0 auto
-		padding: 0em 0 0.5em
-		display: block
-		position: relative
-		font-size: 15px
-		color: #fff
-		font-family: "Nexa-Light"
+  li
+    width: 90%
+    margin: 0 auto
+    padding: 0em 0 0.5em
+    display: block
+    position: relative
+    font-size: 15px
+    color: #fff
+    font-family: "Nexa-Light"
 
-	a
-		margin: 0
-		color: #fff
-		font-size: 1em
-		font-family: "Nexa-Light"
+  a
+    margin: 0
+    color: #fff
+    font-size: 1em
+    font-family: "Nexa-Light"
 
-	.line
-		color: #BE1406
-		font-weight: 600
+  .line
+    color: #BE1406
+    font-weight: 600
 
 // MISC
 
 ::-webkit-scrollbar 
-	width: 10px
-	height: 10px
-	background: #333333
+  width: 10px
+  height: 10px
+  background: #333333
 
 ::-webkit-scrollbar-thumb 
-	background: rgba(5, 42, 60, 1)
+  background: rgba(5, 42, 60, 1)
 
 ::-webkit-scrollbar-track 
-	background: none repeat scroll 0 0 rgba(0, 12, 23, 1)
-	border-left: 1px solid rgba(0, 0, 0, 0.5)
-	box-shadow: 1px 0 1px rgba(0, 75, 100, 0.3)
-	
+  background: none repeat scroll 0 0 rgba(0, 12, 23, 1)
+  border-left: 1px solid rgba(0, 0, 0, 0.5)
+  box-shadow: 1px 0 1px rgba(0, 75, 100, 0.3)
+  
 ::selection
-	background: #052A3C
+  background: #052A3C
 ::-webkit-selection
-	background: #052A3C
+  background: #052A3C
 ::-moz-selection
-	background: #052A3C
+  background: #052A3C
