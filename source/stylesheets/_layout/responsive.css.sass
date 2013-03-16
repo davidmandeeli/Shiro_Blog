@@ -5,6 +5,9 @@
   #content
     left: 12%
 
+    .discover, .design, .develop
+      width: 95%
+
 @media all and (max-width: 1200px) and (min-width: 800px)
 
   header
@@ -16,6 +19,9 @@
     .sub-title
       width: 10%
 
+    .discover, .design, .develop
+      width: 95%
+      
   .tweet_container
     display: none
 
@@ -34,7 +40,10 @@
     +span-columns(6.875,14)
 
   .w-cont
-    +span-columns(6.875,14)
+    +span-columns(14,14)
+
+    .discover, .design, .develop
+      width: 100%
 
   .w-cont:last-child
     +span-columns(14,14)
@@ -62,3 +71,6 @@
 
   .w-cont
     +span-columns(14,14)
+
+  .tweet_container
+    display: none
