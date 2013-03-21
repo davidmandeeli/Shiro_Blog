@@ -1,132 +1,151 @@
 ---
+
+
+---
+
+// Portfolio
+
+- @dtitle = "data-title"
+- @largesrc = "data-largesrc"
+- @description = "data-description"
+
+- @data_titles = ['SHIRO','EASTERN VISAYAS - REGION 8','PASAY TOURISM','SKINWORKZ','SHIROSYSTEMS','WEB MOCK-UPS']
+- @image_src = ["images/shiro.png","images/1.png","images/2.png","images/3.png","images/4.png","images/5.png"]
+
+- @data_description  = ['My personal blog.',
+                        '',
+                        '',
+                        '',
+                        '',
+                        '']
+
+- @alt_img = ["easternvisayas","pasaytourism","skinworkz","shirosystems","mockups"]
+- @thumb_img = ["images/thumbs/shiro.jpg","images/thumbs/1.jpg","images/thumbs/2.jpg","images/thumbs/3.jpg","images/thumbs/4.jpg","images/thumbs/5.jpg"]
+- @links_url = ["http://shirodesu.com","http://easternvisayas.com.ph/test","http://pasaytourism.com","http://skinworkz.ph","http://shirosystems.com", ""]
+
 ---
 
 #content
 
-  #intro
-    %p.first-lane= "Hi!, I am <span class='name'>SHIRO</span> a freelance front-end web <br> <span class='dev'>DEVELOPER</span> & <span class='des'>DESIGNER</span> <br> who currently sleep and hide in Makati, Philippines<br> I've been destroying and crafting websites since 2012<br> <span class='follow'>You can follow me on <a href='https://twitter.com/DavidMandeeli' target='_blank'>Twitter</a></span></span>"
+  %section#intro
+    %p.first-lane= "Hi!, I am <span class='name'>SHIRO</span> a freelance front-end web <br> <span class='dev'>DEVELOPER</span> & <span class='des'>DESIGNER</span> <br> who currently sleep and hide in Makati, Philippines<br> I've been destroying and crafting websites since 2012<br> <span class='follow'>You can follow me on <a class='links' href='https://twitter.com/DavidMandeeli' target='_blank'>Twitter</a></span></span>"
 
-  .whats#build
-    %h1.title= "SERVICE"
-    %ul
+  %section.whats#build
+    %h2.title= "SERVICE"
+    %ul.top
       %li= "<span class='line'>--</span> Static websites"
       %li= "<span class='line'>--</span> Wordpress based websites"
       %li= "<span class='line'>--</span> Responsive / Mobile websites"
       %li= "<span class='line'>--</span> PSD to website development"
       %li= "<span class='line'>--</span> Web applications"
 
-  .whats#use
-    %h1.title= "I CODE"
-    %ul
+  %section.whats#use
+    %h2.title= "I CODE"
+    %ul.top
       %li= "<span class='line'>--</span> HTML / HTML5"
       %li= "<span class='line'>--</span> CSS / CSS3"
       %li= "<span class='line'>--</span> PHP / MYSQL"
       %li= "<span class='line'>--</span> JavaScript / Jquery"
       %li= "<span class='line'>--</span> Ruby Programming"
 
-  .platforms
-    %h1.title= "I USE"
-    %ul
+  %section.platforms#plat
+    %h2.title= "I USE"
+    %ul.top
       %li= "<span class='line'>--</span> Ruby on Rails for web apps & Middleman for web development"
       %li= "<span class='line'>--</span> PHP, MySQL for Wordpress development"
       %li= "<span class='line'>--</span> ASP.net for Windows based sites"
       %li= "<span class='line'>--</span> Compass and Susy framework for responsive design"
       %li= "<span class='line'>--</span> Photoshop for web mockups and image manipulations"
 
-    %h1.title= "OTHER INFO"
-    %ul
+  %section.platforms#plat
+    %h2.title= "OTHER INFO"
+    %ul.top
       %li= "<span class='line'>--</span> Git / GitHub for version control"
       %li= "<span class='line'>--</span> SASS for css compiler"
       %li= "<span class='line'>--</span> Windows & Linux Ubuntu for web development"
       %li= "<span class='line'>--</span> Sublime Text 2 & Console2"
       %li= "<span class='line'>--</span> Currently enrolled in CodeSchool learning various things such as RoR, NodeJS & CoffeeScript"
-      
-  .tweet_container
-    %h1.he= "Tweet"
-    #tweet
 
-  #how-work
-    %h1= "MY WORKFLOW"
+  %section#how-work
+    %h3= "MY WORKFLOW"
     .w-cont
       .discover
-        %h3= "DISCOVER"
-        %p= "Every client has it's own taste and needs when it comes to business. It is my job to know every single bit of what they do and what they lack. The making of storyboards and wireframes will take part in this section to show the best possible result to the client. After lots of talk and meetings one decision will be made.<br><br> -- Our goal is to choose the best result that we can come up."
+        %h4= "DISCOVER"
+        %p= "Clients have their own taste and needs when it comes to business. It is my job to know every single bit of what they do and what they lack. The making of storyboards and wireframes will take part in this section to show the best possible result to the client. After lots of talk and meetings one decision will be made.<br><br> -- Our goal is to choose the best result that we can come up."
     .w-cont
       .design
-        %h3= "DESIGN"
-        %p= "This is where we'll be designing up your site with various design trends and techniques to look cool. Things will be fun at this point and at the same time challenging, I will be creating a user friendly, well designed layouts for your business and for the users that even an old timer will understand.<br><br> -- My goal is to give the best user experience for you and your costumers."
+        %h4= "DESIGN"
+        %p= "This is where we'll be designing your site with various design trends and techniques to look cool. Things will be fun at this point and at the same time challenging, I will be creating a user friendly, well designed layouts for your business and for the users that even an old timer will understand.<br><br> -- My goal is to give the best user experience for you and your costumers."
     .w-cont
       .develop
-        %h3= "DEVELOP"
-        %p= "Code it up!, Your site will be crafted using <a href='http://html5boilerplate.com/' target='_blank'>HTML5 Boilerplate</a>,  <a href='http://compass-style.org/' target='_blank'>Compass</a> & <a href='http://susy.oddbird.net/' target='_blank'>Susy</a> framework, <a href='http://wordpress.org/' target='_blank'>Wordpress</a> or <a href='http://rubyonrails.org/' target='_blank'>Ruby-on-Rails</a> depending on the project. The site will be uploaded to my <a href='https://github.com/davidmandeeli' target='_blank'>Github</a> for a better work flow. At the end of the day, I will be launching the site and handle the rest.<br><br> -- Last thing I would say is, I've got this under control. Have fun with your new site *smile*."
+        %h4= "DEVELOP"
+        %p= "Code it up!, Your site will be crafted using <a class='links' href='http://html5boilerplate.com/' target='_blank'>HTML5 Boilerplate</a>,  <a class='links' href='http://compass-style.org/' target='_blank'>Compass</a> & <a class='links' href='http://susy.oddbird.net/' target='_blank'>Susy</a> framework, <a class='links' href='http://wordpress.org/' target='_blank'>Wordpress</a> or <a class='links' href='http://rubyonrails.org/' target='_blank'>Ruby-on-Rails</a> depending on the project. The site will be uploaded to my <a class='links' href='https://github.com/davidmandeeli' target='_blank'>Github</a> for a better work flow. At the end of the day, I will be launching the site and handle the rest.<br><br> -- Last thing I would say is, I've got this under control. Have fun with your new site :)"
 
-  #latest-works
-    %h1= "MY LATEST WORKS"
-    .boxy
-      .work#one
-        %img{:src => "images/works/1a.jpg", :alt => "Eastern Visayas"}
-        %img{:src => "images/works/1b.jpg", :alt => "Eastern Visayas"}
-        %img{:src => "images/works/1c.jpg", :alt => "Eastern Visayas"}  
-      .hove
-        %h2= "Eastern Visayas"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Web Development + Design"
+  %section#latest-works
+    %h3= "LATEST WORKS"
+    %ul#og-grid.og-grid
+      - @data_titles.each_with_index do |data_titles, i|
+        %li
+          %a{@dtitle => @data_titles[i], @largesrc => @image_src[i], @description => @data_description[i], :href => @links_url[i]}
+            %img.og{:alt => @alt_img[i], :src => @thumb_img[i]}
 
-    .boxy
-      .work#two
-        %img{:src => "images/works/2a.jpg", :alt => "Pasay Tourism"}
-        %img{:src => "images/works/2b.jpg", :alt => "Pasay Tourism"}  
-      .hove 
-        %h2= "Pasay Tourism"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Web Development"
+  %section#blog
+    %h3= "RECENT POST"
+    - page_articles.each_with_index do |article, i|
+      .post-cont
+        .post
+          %h4
+            = link_to article.title, article
+            %span= article.date.strftime('< %b, %e >')
+          /
+            use article.summary(250) if you have Nokogiri available to show just
+            the first 250 characters
+          = article.body
 
-    .boxy
-      .work#three
-        %img{:src => "images/works/3a.jpg", :alt => "SkinworkZ"}
-        %img{:src => "images/works/3b.jpg", :alt => "SkinworkZ"}  
-      .hove 
-        %h2= "SkinworkZ"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Wordpress Development"
+  %section#contact
+    %h3= "CONTACT"
+    %form.contact_form{:action => "#", :method => "post", :name => "contact_form"}
+      %ul
+        %li.title
+          %h2 Drop me an info
+        #about-contact
+          %li.list
+            %label{:for => "name"} Name
+            %input{:placeholder => "Name", :required => "", :type => "text"}/
+          %li.list
+            %label{:for => "email"} Email
+            %input{:name => "email", :placeholder => "username@example.com", :required => "", :type => "email"}/
+            %span.form_hint Proper format "name@something.com"
+          %li.list
+            %label{:for => "website"} Got an existing website?
+            %input{:name => "website", :pattern => "(http|https)://.+", :placeholder => "http://site.com"}/
+            %span.form_hint Proper format "http://someaddress.com"
+        #about-project
+          %li.list
+            %label{:for => "budget"} Budget:
+            .styled-select
+              %select
+                %option ....
+                %option Lesser than $500
+                %option $500 - $1000
+                %option $1000 - $2000
+                %option Greater than $2000
+          %li.list
+            %label{:for => "phone"} Phone #
+            %input{:placeholder => "000-0000-0000", :required => "", :type => "number", :onkeypress => "return isNumberKey(event)"}/
+        #project-message
+          %li.list
+            %label{:for => "message"} Tell me something about the Project:
+            %textarea{:cols => "40", :name => "message", :required => "", :rows => "6"}
+          %li.list
+            %button.submit{:type => "submit"} SEND
 
-    .boxy
-      .work#one
-        %img{:src => "images/works/1a.jpg", :alt => "Eastern Visayas"}
-        %img{:src => "images/works/1b.jpg", :alt => "Eastern Visayas"}
-        %img{:src => "images/works/1c.jpg", :alt => "Eastern Visayas"}  
-      .hove
-        %h2= "Eastern Visayas"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Web Development + Design"
-
-    .boxy
-      .work#two
-        %img{:src => "images/works/2a.jpg", :alt => "Pasay Tourism"}
-        %img{:src => "images/works/2b.jpg", :alt => "Pasay Tourism"}  
-      .hove 
-        %h2= "Pasay Tourism"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Web Development"
-
-    .boxy
-      .work#three
-        %img{:src => "images/works/3a.jpg", :alt => "SkinworkZ"}
-        %img{:src => "images/works/3b.jpg", :alt => "SkinworkZ"}  
-      .hove 
-        %h2= "SkinworkZ"
-        %a.link{:title => "Code: 0x2b"}
-          %i.icon-plus
-        %p="Web Development"
-
-  #blog
-    %h1= "MY LATEST BLOG"
-    
-
-
+    .my_info
+      %h2.get Get in touch
+      %p= "I live in the eastern side of Mordor. Sadly you can't simply walk in here so you'll just have to email on <i>davidmandeeli@gmail.com</i> or call me at <i>091-5466-4630</i>"
       
+      %h2.get Let's stay connected
+      %a.zocial.facebook{:href => "https://www.facebook.com/shiroyasha7", :target => "_blank"} Add me on Facebook
+      %a.zocial.googleplus{:href => "https://plus.google.com/u/0/104248138236142193757", :target => "_blank"} Follow me on Goolge+
+      %a.zocial.twitter{:href => "https://twitter.com/DavidMandeeli", :target => "_blank"} Follow me on Twitter
+      %a.zocial.github{:href => "https://github.com/davidmandeeli", :target => "_blank"} Watch me on Github

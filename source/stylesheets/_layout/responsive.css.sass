@@ -1,6 +1,11 @@
 // RESPONSIVE VALUES
 
-@media screen and (min-width: 1021px) and (max-width: 1440px) 
+/* Large desktop */
+
+@media (min-width: 1200px)
+
+  #content
+    margin: 2em auto
 
   #content
     left: 12%
@@ -8,7 +13,21 @@
     .discover, .design, .develop
       width: 95%
 
-@media all and (max-width: 1200px) and (min-width: 800px)
+  .my_info
+    border-right: 1px solid rgba(0, 75, 100, 0.3)
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.7)
+    padding-right: 1.7em
+    padding-left: 1em
+    
+  .zocial,
+  a.zocial 
+    width: 90%
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1200px)
+
+  #content
+    margin: 1em auto
 
   header
     display: none
@@ -22,10 +41,20 @@
     .discover, .design, .develop
       width: 95%
       
-  .tweet_container
+  #tweet_container
     display: none
 
-@media all and (max-width: 800px) and (min-width: 640px)
+  .post-cont
+    +span-columns(14,14)
+    width: 100%
+    margin: 0 auto 1em
+
+  .my_info
+    border-right: 1px solid rgba(0, 75, 100, 0.3)
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.7)
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
 
   header
     display: none
@@ -36,9 +65,6 @@
   .whats
     +span-columns(14,14)
 
-  .boxy
-    +span-columns(6.875,14)
-
   .w-cont
     +span-columns(14,14)
 
@@ -48,10 +74,43 @@
   .w-cont:last-child
     +span-columns(14,14)
 
-  .tweet_container
+  #tweet_container
     display: none
 
-@media all and (max-width: 640px) and (min-width: 0px)
+  .post-cont
+    +span-columns(14,14)
+    width: 100%
+    margin: 0 auto 1em
+
+  .contact_form
+    ul
+      +span-columns(14,14)
+    li
+      padding: 4px 0 0 20px
+    input, textarea
+      width: 95%
+  h2
+    text-align: center
+    border-bottom: 0 solid rgba(0, 75, 100, 0.3)
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7)
+  h2.get
+    width: 100%
+    text-align: center
+
+  .my_info
+    +span-columns(14, 14)
+    padding-top: 1em
+    padding-right: 0  
+    padding-left: 0
+    border-top: 1px solid rgba(0, 75, 100, 0.3)
+    box-shadow: 0px -1px 0 rgba(0, 0, 0, 0.7)
+
+  .zocial,
+  a.zocial 
+    width: 60%
+
+/* Landscape phones and down */
+@media (max-width: 480px)
 
   p.first-lane
     text-align: left
@@ -68,9 +127,28 @@
 
   .boxy
     +span-columns(14,14)
+    box-shadow: 0 0 0 0 #000000
 
   .w-cont
     +span-columns(14,14)
 
-  .tweet_container
+  #tweet_container
     display: none
+
+  .post-cont
+    +span-columns(14,14)
+    width: 100%
+    margin: 0 auto 1em
+
+  .contact_form
+    ul
+      +span-columns(14,14)
+    input, textarea
+      width: 100%
+    h2
+      text-align: center
+
+    #about-contact
+      +span-columns(14, 14)
+    #about-project
+      +span-columns(14, 14)

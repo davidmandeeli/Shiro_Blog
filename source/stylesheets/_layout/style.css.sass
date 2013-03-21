@@ -98,7 +98,7 @@ header
           -moz-user-select: none
           -ms-user-select: none
           user-select: none
-          background: #001222
+          background: url(../images/noisy_net.png) fixed
 
 // Content
 
@@ -108,9 +108,9 @@ header
   max-width: 900px
   height: 100%
   max-height: 800px
-  margin: 2em auto
+  margin: 1em auto 0
 
-  h1.title  
+  h2.title  
     text-align: center
     position: relative
     width: 100%
@@ -128,11 +128,36 @@ header
     display: block
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3)
 
-
   .follow
     font-size: 0.8em
     font-style: italic
 
+  ul.top
+    margin: 0
+    padding: 0
+
+    li
+      width: 90%
+      margin: 0 auto
+      padding: 0em 0 0.5em
+      display: block
+      position: relative
+      font-size: 15px
+      color: #fff
+      font-family: "Nexa-Light"
+
+  a.links
+    color: #fff
+    font-size: 1em
+    font-family: "Nexa-Light"
+    text-decoration: underline
+    font-style: italic
+    outline: none
+
+  .line
+    color: #BE1406
+    font-weight: 600
+    
   #intro
     position: relative
     width: 100%
@@ -142,15 +167,15 @@ header
     border-bottom: 2px solid rgba(0, 75, 100, 0.8)
 
     p.first-lane
-    position: relative
-    width: 100%
-    margin: 0 auto
-    padding: 0
-    text-align: center
-    font-size: 1.5em
-    font-family: "Nexa-Light"
-    color: #fff
-    text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      position: relative
+      width: 100%
+      margin: 0 auto
+      padding: 0.8em 0
+      text-align: center
+      font-size: 1.5em
+      font-family: "Nexa-Light"
+      color: #fff
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
 
     span.name
       font-family: "Nexa-Bold"
@@ -172,9 +197,7 @@ header
   .whats
     height: 100%
     margin: 2em auto 0
-    border: 1px solid rgba(0, 0, 0, 0.5)
-    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+    +the-shiro-effect
 
   .whats#build
     float: left
@@ -185,20 +208,7 @@ header
   .platforms
     height: 100%
     margin: 2em auto 0
-    border: 1px solid rgba(0, 0, 0, 0.5)
-    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
-
-  .boxy
-    height: 180px
-    z-index: 50
-    overflow: hidden
-    cursor: pointer
-    margin: 0 auto 2em
-    &:hover .hove
-      opacity: 1
-      display: block
-      top: -180px
+    +the-shiro-effect
 
   #how-work
     position: relative
@@ -208,26 +218,19 @@ header
     margin: 3.5em auto 0
     border-top: 2px solid rgba(0, 75, 100, 0.8)
   
-    h1  
-      text-align: center
-      position: relative
-      width: 330px
-      background: rgba(0, 18, 34, 1)
+    h3  
+      width: 320px
       padding: 0.1em
       text-align: justified
-      font-size: 2.2em
       font-family: "Nexa-Bold"
-      color: #fff
       top: -0.8em
-      margin: 0 auto
-      display: block
-      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      +titles-effect
 
     .w-cont
       height: 100%
       z-index: 50
       margin: 0 auto 1em
-
+      box-shadow: 0 13px 10px -10px #000000
       .discover
         position: relative
         margin: 0 auto
@@ -247,7 +250,7 @@ header
         padding: 0 0 0.1em
         background: rgba(73, 194, 255, 0.6)
 
-      h3  
+      h4  
         text-align: center
         position: relative
         width: 90%
@@ -265,13 +268,14 @@ header
         color: white
         font-family: "Nexa-Light"
         font-size: 1em
-        font-style: italic
+        font-style: normal
+        font-weight: 100
+        line-height: 1.4em
         height: 100%
         margin: 1em auto
         position: relative
-        width: 90%
+        width: 92%
         text-align: justified
-
 
   #latest-works
     position: relative
@@ -281,91 +285,261 @@ header
     margin: 3em auto 0
     border-top: 2px solid rgba(0, 75, 100, 0.8)
 
-    h1  
-      text-align: center
-      position: relative
-      width: 390px
-      background: rgba(0, 18, 34, 1)
+    h3
+      width: 320px
       padding: 0.1em
       text-align: justified
-      font-size: 2.2em
       font-family: "Nexa-Bold"
-      color: #fff
       top: -0.8em
-      margin: 0 auto
-      display: block
-      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-      clear: both
+      +titles-effect
 
-    .work
-      position: relative
-      width: 280px
-      margin: 0 auto
-      height: 163px
-      box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
-      opacity: 0.7
-
-  .hove
-    position: relative
-    height: 200px
-    width: 280px
-    top: 0
-    margin: 0 auto
-    background: none repeat scroll 0 0 rgba(0, 13, 24, 0.9)
-    box-shadow: 0px -2px 2px rgba(0, 75, 100, 1)
-    opacity: 0
-    overflow: hidden
-    +transition-property(all)
-    +transition-duration(0.2s)
-    +transition-timing-function(ease-in)
-
-    h2
+    .og-grid
+      list-style: none
+      padding: 20px 0
+      margin: -2em auto 0
       text-align: center
-      position: relative
-      padding: 0.4em 0.9em
-      font-size: 1.2em
-      font-family: "Nexa-Light"
-      color: #fff
-      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
-      margin: 1.2em auto 0
-      height: 30px
-
-    a
-      display: block
-      position: relative
       width: 100%
-      height: 100%
-      font-size: 6.8em
-      text-align: center
-      color: rgba(255, 255, 255, 0.9)
-      text-shadow: 0px 0px 1px rgba(0, 205, 255, 0.4)
-      margin: 0 auto
-      top: -28px
-
-    p
-      color: white
-      font-family: "Nexa-Light"
-      font-size: 0.8em
-      font-style: italic
-      height: 100%
-      margin: 0 auto
+      li
+        display: inline-block
+        margin: 15px 5px 0 5px
+        vertical-align: top
+        height: 170px
+        outline: none
+        > a.og
+          border: none
+          outline: 0
+          display: block
+          position: relative
+        img.og
+          border: none
+          outline: 0
+          display: block
+          position: relative
+          +border-radius(3px)
+          opacity: 0.8
+          +transition-property(all)
+          +transition-duration(0.3s)
+          +transition-timing-function(ease-in)
+          cursor: pointer
+          &:hover
+            opacity: 1
+          
+    .og-expander
       position: absolute
-      top: 160px
+      top: auto
+      left: 0
       width: 100%
+      margin-top: 10px
+      text-align: left
+      height: 0
+      overflow: hidden
+      +the-shiro-effect
+      background: #04121F
+
+    .og-expander-inner
+      padding: 0
+      height: 100%
+
+    .og-close
+      position: absolute
+      width: 40px
+      height: 40px
+      top: 8px
+      right: 8px
+      cursor: pointer
+      z-index: 9999
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        top: 50%
+        height: 1px
+        background: #888
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        transform: rotate(45deg)
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        top: 50%
+        height: 1px
+        background: #888
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        transform: rotate(45deg)
+        -webkit-transform: rotate(-45deg)
+        -moz-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+      &:hover
+        &::before, &::after
+          background: #333
+
+    .og-fullimg
+      width: 100%
+      float: left
+      overflow: hidden
+      position: relative
+
+    .og-details
+      width: 100%
+      float: left
+      overflow: hidden
+      position: relative
+      padding: 0 40px 0 20px
+
+    .og-fullimg
       text-align: center
+      img
+        display: inline-block
+        max-height: 100%
+        max-width: 100%
+
+    .og-details
+      h3.og
+        background: none repeat scroll 0 0 transparent
+        font-size: 30px
+        font-weight: 300
+        padding: 0px 0 0
+        text-align: left
+        width: 100%
+        top: 0
+        width: 90%
+        margin: 1em auto 0
+      p.og
+        font-family: "Nexa-Light"
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: #999
+        font-style: italic
+        width: 90%
+        margin: 0.5em auto
+      a.og
+        position: relative
+        display: block
+        width: 150px
+        padding: 10px 20px
+        margin: 20px 0 0 5%
+        font-family: "Nexa-Light"
+        text-transform: uppercase
+        letter-spacing: 2px
+        padding: 10px 20px
+        background-color: #68b12f
+        background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e))
+        background: -webkit-linear-gradient(top, #68b12f, #50911e)
+        background: -moz-linear-gradient(top, #68b12f, #50911e)
+        background: -ms-linear-gradient(top, #68b12f, #50911e)
+        background: -o-linear-gradient(top, #68b12f, #50911e)
+        background: linear-gradient(top, #68b12f, #50911e)
+        border: 1px solid #509111
+        border-bottom: 1px solid #5b992b
+        border-radius: 3px
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        -ms-border-radius: 3px
+        -o-border-radius: 3px
+        box-shadow: inset 0 1px 0 0 #9fd574
+        -webkit-box-shadow: 0 1px 0 0 #9fd574 inset
+        -moz-box-shadow: 0 1px 0 0 #9fd574 inset
+        -ms-box-shadow: 0 1px 0 0 #9fd574 inset
+        -o-box-shadow: 0 1px 0 0 #9fd574 inset
+        color: white
+        text-align: center
+        text-shadow: 0 -1px 0 #396715
+        font-family: "Nexa-Bold"
+        font-style: normal
+        text-decoration: none
+        &:hover
+          opacity: .85
+          cursor: pointer
+        &:active
+          border: 1px solid #20911e
+          box-shadow: 0 0 10px 5px #356b0b inset
+          -webkit-box-shadow: 0 0 10px 5px #356b0b inset
+          -moz-box-shadow: 0 0 10px 5px #356b0b inset
+          -ms-box-shadow: 0 0 10px 5px #356b0b inset
+          -o-box-shadow: 0 0 10px 5px #356b0b inset
+
+    .og-loading
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background: #ddd
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc
+      position: absolute
+      top: 50%
+      left: 50%
+      margin: -25px 0 0 -25px
+      -webkit-animation: loader 0.5s infinite ease-in-out both
+      -moz-animation: loader 0.5s infinite ease-in-out both
+      animation: loader 0.5s infinite ease-in-out both
+
+    @-webkit-keyframes loader
+      0%
+        background: #ddd
+      33%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
+      66%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
+
+    @-moz-keyframes loader
+      0%
+        background: #ddd
+      33%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
+      66%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
+
+
+    @keyframes loader
+      0%
+        background: #ddd
+      33%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
+      66%
+        background: #ccc
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
+
+    @media screen and (max-width: 830px)
+      .og-expander
+        h3
+          font-size: 32px
+        p
+          font-size: 13px
+        a
+          font-size: 12px
+
+    @media screen and (max-width: 650px)
+      .og-fullimg
+        display: none
+      .og-details
+        float: none
+        width: 100%
+
+  #info
+    display: block
+    height: 200px
+    width: 200px
+    background-color: red
 
   #blog
     position: relative
     float: left
     width: 100%
-    height: 800px
-    margin: 3em auto 0
-    border-top: 1px solid rgba(0, 75, 100, 0.5)
+    height: 100%
+    margin: 3em auto
+    border-top: 2px solid rgba(0, 75, 100, 0.8)
 
-    h1  
+    h3
       text-align: center
       position: relative
-      width: 350px
+      width: 280px
       background: rgba(0, 18, 34, 1)
       padding: 0.1em
       text-align: justified
@@ -378,23 +552,64 @@ header
       text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
       clear: both
 
-    
+    .post-cont
+      position: relative
 
-  .tweet_container
+      .post
+        position: relative
+        margin: 0 auto
+        height: 100%
+        width: 95%
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+        border: 1px solid rgba(0, 0, 0, 0.5)
+        box-shadow: 0 0 2px rgba(0, 75, 100, 0.6)
+
+      h4
+        text-align: center
+        position: relative
+        width: 90%
+        text-align: justified
+        font-size: 1.2em
+        font-family: "Nexa-Light"
+        color: #fff
+        margin: 0 auto
+        padding: 0.4em 0 0.2em
+        display: block
+        text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+        border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+        a
+          text-decoration: none
+          color: #fff
+          &:hover
+            text-decoration: underline
+
+      p
+        color: white
+        font-family: "Nexa-Light"
+        font-size: 1em
+        font-style: italic
+        margin: 0.5em auto
+        position: relative
+        width: 90%
+        text-align: center
+
+      span
+        font-size: 0.8em
+        font-family: "Nexa-Light"
+        color: rgba(143, 17, 14, 1)
+        text-shadow: none
+        margin-left: 0.5em
+        top: 0
+
+  #tweet_container
     position: relative
     width: 100%
-    max-width: 960px
-    height: 100%
-    margin: 2em auto 0
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
-    border: 1px solid rgba(0, 0, 0, 0.5)
-    box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
-    float: left
+    margin: 1em auto 0
 
     .he 
       text-align: center
       position: relative
-      width: 100px
+      width: 100%
       background: #052A3C
       padding: 0.1em
       text-align: justified
@@ -403,7 +618,6 @@ header
       color: #fff
       text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
       display: block
-      float: left
       margin: 0
       border-right: 1px solid rgba(0, 0, 0, 0.5)
 
@@ -412,42 +626,239 @@ header
       font-family: "Nexa-Light"
       font-size: 1.1em
       font-style: italic
-      height: 100%
-      margin: 0 0 0 7.2em
+      margin: 0 0 0 0
       position: absolute
-      text-align: left
-
-    ul
-      height: 100%
-      width: 100%
-      li
-        top: 0.4em
-        width: 100%
-        height: 100%
-
-  ul 
-    margin: 0
-    padding: 0
-
-  li
-    width: 90%
-    margin: 0 auto
-    padding: 0em 0 0.5em
-    display: block
+        
+  #contact
     position: relative
-    font-size: 15px
-    color: #fff
-    font-family: "Nexa-Light"
+    float: left
+    width: 100%
+    height: 100%
+    margin: 0 auto 2em
+    border-top: 2px solid rgba(0, 75, 100, 0.8)
+    border-bottom: 2px solid rgba(0, 75, 100, 0.8)
 
-  a
-    margin: 0
-    color: #fff
-    font-size: 1em
-    font-family: "Nexa-Light"
+    h3  
+      text-align: center
+      position: relative
+      width: 210px
+      background: rgba(0, 18, 34, 1)
+      padding: 0.1em
+      text-align: justified
+      font-size: 2.2em
+      font-family: "Nexa-Bold"
+      color: #fff
+      top: -0.8em
+      margin: 0 auto
+      display: block
+      text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.50)
+      clear: both
+ 
+    ul 
+      margin: 0
+      padding: 0
 
-  .line
-    color: #BE1406
-    font-weight: 600
+    li
+      width: 90%
+      margin: 0 auto
+      padding: 0em 0 0.5em
+      display: block
+      position: relative
+      font-size: 15px
+      color: #fff
+      font-family: "Nexa-Light"
+
+      a
+        margin: 0
+        color: #fff
+        font-size: 1em
+        font-family: "Nexa-Light"
+
+    .line
+      color: #BE1406
+      font-weight: 600
+
+    .contact_form
+      ul
+        list-style-type: none
+        list-style-position: outside
+        margin: 0 0 3em
+        padding: 0px 0.2em 0 0
+      li.list
+        padding: 4px 0 0 0
+        margin: 0
+        position: relative
+      li.title
+        width: 100%
+    h2
+      font-style: italic
+      margin: 0
+      display: block
+      border-bottom: 1px solid rgba(0, 75, 100, 0.3)
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.7)
+      padding: 0 0 0.6em
+      font-family: 'Nexa-Light'
+      color: #fff
+      width: 100%
+    h2.proj
+      margin: 1em 0 0
+      width: 100%
+
+    .required_notification
+      color: #d45252
+      margin: 5px 0 0 5px
+      display: inline
+
+    .contact_form
+      label
+        width: 100%
+        margin-top: 3px
+        display: inline-block
+        float: left
+        padding: 3px
+      input
+        height: 20px
+        padding: 5px 8px
+        color: #fff
+      textarea
+        padding: 8px
+        color: white
+        width: 100%
+      button
+        margin-left: 0
+      input, textarea
+        +the-shiro-effect
+        border-radius: 2px
+        padding-right: 30px
+        +transition-property(all)
+        +transition-duration(0.3s)
+        +transition-timing-function(ease-in)
+      input:focus, textarea:focus
+        border: 1px solid #555
+        box-shadow: 0 0 3px #040F17
+      input:required, textarea:required
+        background: #040F17 url(../images/red_asterisk.png) no-repeat 98% center
+      input:required:valid, textarea:required:valid
+        background: #040F17 url(../images/valid.png) no-repeat 98% center
+        box-shadow: 0 0 5px #000
+        border: 1.5px solid rgba(40, 146, 31, 0.8)
+      input:focus:invalid, textarea:focus:invalid
+        background: #040F17 url(../images/invalid.png) no-repeat 98% center
+        box-shadow: 0 0 5px #000
+        border: 1.5px solid rgba(88, 17, 19, 0.8)
+
+    .form_hint
+      background: #581113
+      border-radius: 3px 3px 3px 3px
+      color: white
+      margin-left: 8px
+      padding: 1px 6px
+      z-index: 999
+      position: absolute
+      display: none
+      &::before
+        content: "\25C0"
+        color: #581113
+        position: absolute
+        top: 1px
+        left: -6px
+
+    .contact_form input
+      &:focus + .form_hint
+        display: inline
+      &:required:valid + .form_hint
+        background: #28921f
+        &::before
+          color: #28921f
+
+    button.submit
+      margin: 1em auto 0
+      background-color: #68b12f
+      background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e))
+      background: -webkit-linear-gradient(top, #68b12f, #50911e)
+      background: -moz-linear-gradient(top, #68b12f, #50911e)
+      background: -ms-linear-gradient(top, #68b12f, #50911e)
+      background: -o-linear-gradient(top, #68b12f, #50911e)
+      background: linear-gradient(top, #68b12f, #50911e)
+      border: 1px solid #509111
+      border-bottom: 1px solid #5b992b
+      border-radius: 3px
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      -ms-border-radius: 3px
+      -o-border-radius: 3px
+      box-shadow: inset 0 1px 0 0 #9fd574
+      -webkit-box-shadow: 0 1px 0 0 #9fd574 inset
+      -moz-box-shadow: 0 1px 0 0 #9fd574 inset
+      -ms-box-shadow: 0 1px 0 0 #9fd574 inset
+      -o-box-shadow: 0 1px 0 0 #9fd574 inset
+      color: white
+      font-weight: bold
+      padding: 6px 20px
+      text-align: center
+      text-shadow: 0 -1px 0 #396715
+      &:hover
+        opacity: .85
+        cursor: pointer
+      &:active
+        border: 1px solid #20911e
+        box-shadow: 0 0 10px 5px #356b0b inset
+        -webkit-box-shadow: 0 0 10px 5px #356b0b inset
+        -moz-box-shadow: 0 0 10px 5px #356b0b inset
+        -ms-box-shadow: 0 0 10px 5px #356b0b inset
+        -o-box-shadow: 0 0 10px 5px #356b0b inset
+
+    .styled-select select
+      background: transparent
+      width: 248px
+      padding: 7px 5px 5px
+      font-size: 16px
+      line-height: 1
+      border: 0
+      border-radius: 0
+      height: 34px
+      -webkit-appearance: none
+
+    .styled-select
+      width: 220px
+      height: 34px
+      overflow: hidden
+      background: url(../images/new_arrow.png) no-repeat right #ddd
+      +the-shiro-effect
+
+    select
+      text-align: left
+      position: relative
+      width: 100%
+      font-size: 1.2em
+      font-family: "Nexa-Light"
+      color: #fff
+      margin: 0 auto
+
+    option
+      text-align: center
+      position: relative
+      width: 100%
+      font-size: 1.2em
+      font-family: "Nexa-Light"
+      color: #fff
+      margin: 0 auto
+      background: #001B29
+      border-top: 2px solid rgba(0, 75, 100, 0.8)
+
+  .my_info
+
+    p
+      color: white
+      font-family: "Nexa-Light"
+      font-size: 1em
+      margin: 1em auto
+      position: relative
+      width: 100%
+      text-align: justified
+
+    i
+      text-decoration: underline
 
 // MISC
 

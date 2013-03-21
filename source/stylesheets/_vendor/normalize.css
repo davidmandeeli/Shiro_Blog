@@ -90,7 +90,7 @@ textarea {
 
 body {
     margin: 0;
-    background-color: #001222;
+    background: #03111E url(../images/noisy_net.png) fixed;
     font-size: 16px;
     line-height: 24px;
     scrollbar-face-color: #000000;
