@@ -1,15 +1,9 @@
-/*=VARIABLES - FONTS
-------------------------------------------------*/
-$font-base: 16px;
-$font-base-line-height: 24px;
-$font-base-line-height-half: $font-base-line-height / 2;
-$font-base-percentage: (($font-base / 16px) * 100) + 0%;
-
 /*=FONT - FACE
 ------------------------------------------------*/
 @font-face {
   font-family: "Nexa-Bold";
-  src: url('fonts/nexa/nexa_bold.eot') format('embedded-opentype'),
+  src: 
+       url('fonts/nexa/nexa_bold.eot') format('embedded-opentype'),
        url('fonts/nexa/nexa_bold.svg') format('svg'), 
        url('fonts/nexa/nexa_bold.ttf') format('truetype'), 
        url('fonts/nexa/nexa_bold.woff') format('woff'); 
@@ -17,10 +11,25 @@ $font-base-percentage: (($font-base / 16px) * 100) + 0%;
 
 @font-face {
   font-family: "Nexa-Light";
-  src: url('fonts/nexa/nexa_light.eot') format('embedded-opentype'),
+  src: 
+       url('fonts/nexa/nexa_light.eot') format('embedded-opentype'),
        url('fonts/nexa/nexa_light.svg') format('svg'), 
        url('fonts/nexa/nexa_light.ttf') format('truetype'), 
        url('fonts/nexa/nexa_light.woff') format('woff'); 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url('fonts/nexa/nexa_light.svg') format('svg');
+}
+  
+  @font-face {
+    font-family: "Nexa-Bold";
+    src: url('fonts/nexa/nexa_bold.svg') format('svg');
+}
+
 }
 
 html {
@@ -107,7 +116,7 @@ a.zocial {
   margin: 15px auto 0;
   text-decoration: none;
   font-style: normal;
-  
+  word-wrap: break-word;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
