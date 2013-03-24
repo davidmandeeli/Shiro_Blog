@@ -26,36 +26,26 @@
     = stylesheet_link_tag "html5bp.css"
     = stylesheet_link_tag "site"
 
-  %body
+  %body{}
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
-    
-    %header
-      = partial "layouts/header"
 
     %div{:role => "main", :class => "main"}= yield
 
     %footer
       = partial "layouts/footer"
     
-    %script{:src => "http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"}
-    %script{:charset => "utf-8", :type => "text/javascript"}
-      getTwitters('tweet', {
-      id: 'DavidMandeeli', // for example, ours is 'wighthat'
-      count: 1, // the number of tweets to display
-      enableLinks: true, // if you wish to display links
-      ignoreReplies: true,
-      clearContents: true,
-      template: '%text% - %time%' // the format of the tweet, you can also use %date%
-      });
-
     = javascript_include_tag "libs/jquery-1.9.0.min.js"
     :javascript
       window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.9.0.min.js"><\/script>')
-    = javascript_include_tag "libs/holder"
-    = javascript_include_tag "plugins", "script"
     
     :javascript
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+      $(function() {
+        $(".level > span").each(function() {
+          $(this)
+            .data("origWidth", $(this).width())
+            .width(0)
+            .animate({
+              width: $(this).data("origWidth")
+            }, 1200);
+        });
+      });

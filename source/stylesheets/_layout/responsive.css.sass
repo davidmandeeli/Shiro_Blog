@@ -10,8 +10,11 @@
   #content
     left: 12%
 
-    .discover, .design, .develop
-      width: 95%
+  p.first-lane
+    text-align: center
+
+  .discover, .design, .develop
+    width: 95%
 
   .my_info
     border-right: 1px solid rgba(0, 75, 100, 0.3)
@@ -26,20 +29,21 @@
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1200px)
 
-  #content
-    margin: 1em auto
-
   header
     display: none
 
   #content
     left: 0
+    margin: 1em auto
 
-    .sub-title
-      width: 10%
+  p.first-lane
+    text-align: center
 
-    .discover, .design, .develop
-      width: 95%
+  .sub-title
+    width: 10%
+
+  .discover, .design, .develop
+    width: 95%
       
   #tweet_container
     display: none
@@ -109,18 +113,40 @@
   a.zocial 
     width: 60%
 
+  .m1
+    height: 570px
+
+  .m2
+    height: 270px
+    
+  .m3
+    height: 380px
+
+  .m4
+    height: 500px
+
+  ul.design
+    +span-columns(14 ,14)
+    top: 1em
+    position: relative
+
+  ul.code
+    +span-columns(14 ,14)
+
+  
+
 /* Landscape phones and down */
 @media (max-width: 480px)
-
-  p.first-lane
-    text-align: left
-    margin: 10px
 
   header
     display: none
 
   #content
     left: 0
+
+  p.first-lane
+    text-align: left
+    margin: 10px
 
   .whats
     +span-columns(14,14)

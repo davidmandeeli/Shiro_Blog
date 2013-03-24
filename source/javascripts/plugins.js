@@ -336,7 +336,7 @@ var Grid = (function() {
       this.$description = $( '<p class="og"></p>' );
       this.$href = $( '<a href="#" class="og" target="_blank">Visit website</a>' );
       this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
-      this.$loading = $( '<div class="og-loading"></div>' );
+      this.$loading = $( '<div class="og-loading"><h3>LOADING....</h3></div>' );
       this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
       this.$closePreview = $( '<span class="og-close"></span>' );
       this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );

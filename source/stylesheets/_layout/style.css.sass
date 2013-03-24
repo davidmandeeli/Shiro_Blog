@@ -171,7 +171,6 @@ header
       width: 100%
       margin: 0 auto
       padding: 0.8em 0
-      text-align: center
       font-size: 1.5em
       font-family: "Nexa-Light"
       color: #fff
@@ -390,6 +389,10 @@ header
 
     .og-fullimg
       text-align: center
+      width: 100%
+      height: 100%
+      max-width: 1000px
+      max-height: 300px
       img
         display: inline-block
         max-height: 100%
@@ -462,49 +465,18 @@ header
           -o-box-shadow: 0 0 10px 5px #356b0b inset
 
     .og-loading
-      width: 20px
-      height: 20px
-      border-radius: 50%
-      background: #ddd
-      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc
+      left: 0
+      margin: 0 auto
       position: absolute
       top: 50%
-      left: 50%
-      margin: -25px 0 0 -25px
-      -webkit-animation: loader 0.5s infinite ease-in-out both
-      -moz-animation: loader 0.5s infinite ease-in-out both
-      animation: loader 0.5s infinite ease-in-out both
-
-    @-webkit-keyframes loader
-      0%
-        background: #ddd
-      33%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
-      66%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
-
-    @-moz-keyframes loader
-      0%
-        background: #ddd
-      33%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
-      66%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
-
-
-    @keyframes loader
-      0%
-        background: #ddd
-      33%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd
-      66%
-        background: #ccc
-        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc
+      width: 100%
+      animation: fadeIn 2s
+      -moz-animation: fadeIn 2s infinite
+      -webkit-animation: fadeIn 2s infinite
+      -o-animation: fadeIn 2s infinite
+      
+      h3
+        background: none
 
     @media screen and (max-width: 830px)
       .og-expander
@@ -860,6 +832,216 @@ header
     i
       text-decoration: underline
 
+// Resume
+
+.resume
+  width: 100%
+  max-width: 860px
+  height: 100%
+  margin: 3em auto
+  padding: 0 0 3em
+  background: #030D16
+  border: 1px solid rgba(0, 0, 0, 0.5)
+  box-shadow: 0px 0px 2px rgba(0, 75, 100, 0.6)
+  opacity: 0.9
+  &:hover
+    opacity: 1
+
+  h1.logo
+    display: block
+    color: #fff
+    font-size: 4em
+    font-family: "Nexa-Bold"
+    font-weight: 600
+    text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.50)
+    width: 90%
+    margin: 0.6em auto 0
+    text-align: center
+
+  p.desc
+    color: #fff
+    font-size: 1.18em
+    font-family: "Nexa-Light"
+    text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.10)
+    width: 90%
+    margin: 0 auto
+    padding: 0 
+    text-align: center
+
+  .resume-content
+    width: 85%
+    display: block
+    margin: 4em auto 0
+    height: 100%
+
+  h3
+    background: #030D16
+    color: white
+    display: block
+    font-family: "Nexa-Bold"
+    font-size: 1.2em
+    margin: 0 auto
+    padding: 0.1em
+    font-style: normal
+    position: relative
+    text-align: center
+    text-shadow: -2px 1px 1px rgba(73, 150, 150, 0.5)
+    top: -1.2em
+    width: 180px
+
+  .skills
+    width: 120px
+
+  .add
+    width: 400px
+
+  .web
+    width: 480px
+
+  .main-lane
+    position: relative
+    display: block
+    color: #fff
+    font-size: 1.3em
+    font-family: "Nexa-Light"
+    font-style: italic
+    text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.50)
+    width: 100%
+    text-align: center
+    padding: 0.5em 0
+    border-top: 2px solid rgba(0, 75, 100, 0.5)
+
+    img
+      display: block
+      height: 150px
+      width: 150px
+      margin-top: 35px
+      margin-left: 25px
+      +the-shiro-effect
+
+    p
+      color: #fff
+      font-size: 0.88em
+      font-family: "Nexa-Light"
+      text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.10)
+      border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+      width: 90%
+      margin: 0 auto
+      padding: 0.5em 0
+
+    .hd
+      padding: 0 0 0.5em
+      font-weight: bold
+      font-style: normal
+
+    .key
+      padding: 0 0 0.5em
+      font-weight: bold
+      font-style: normal
+      text-align: left
+
+    .name
+      padding: 0 0 0.5em
+
+    .about
+      font-size: 0.8em
+      font-style: normal
+      text-align: left
+      p
+        margin: 0.5em auto
+        width: 80%
+        border-bottom: 0
+
+    ul
+      margin: 0 auto
+
+      li
+        font-style: normal
+        text-align: left
+        color: #fff
+        font-size: 0.65em
+        font-family: "Nexa-Light"
+        text-shadow: -3px 2px 1px rgba(73, 150, 150, 0.10)
+        border-bottom: 1px solid rgba(0, 75, 100, 0.5)
+        width: 90%
+        margin: 0 auto
+        padding: 0.5em 0
+        list-style: none
+
+        .level
+          margin: 0 17px
+          height: 7px
+          position: relative
+          background: #555
+          border-radius: 5px
+          +the-shiro-effect
+
+          > span
+            display: block
+            position: relative
+            left: 0
+            height: 100%
+            border-radius: 2px
+            -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4)
+            -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4)
+            position: relative
+            overflow: hidden
+
+          .C1
+            background-image: -ms-linear-gradient(top, #49C2FF 0%, #63D0FF 100%)
+            background-image: -moz-linear-gradient(top, #49C2FF 0%, #63D0FF 100%)
+            background-image: -o-linear-gradient(top, #49C2FF 0%, #63D0FF 100%)
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #49C2FF), color-stop(1, #63D0FF))
+            background-image: -webkit-linear-gradient(top, #49C2FF 0%, #63D0FF 100%)
+            background-image: linear-gradient(to bottom, #49C2FF 0%, #63D0FF 100%)
+
+          .C2
+            background-image: -ms-linear-gradient(top, #FFA500 0%, #DB8E00 100%)
+            background-image: -moz-linear-gradient(top, #FFA500 0%, #DB8E00 100%)
+            background-image: -o-linear-gradient(top, #FFA500 0%, #DB8E00 100%)
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFA500), color-stop(1, #DB8E00))
+            background-image: -webkit-linear-gradient(top, #FFA500 0%, #DB8E00 100%)
+            background-image: linear-gradient(to bottom, #FFA500 0%, #DB8E00 100%)
+            
+      li:last-child
+        border-bottom: 0
+        
+      span
+        position: relative
+        left: 2%
+
+      .line
+        color: #BE1406
+        font-weight: 600
+        left: 0
+
+      .top
+        font-family: "Nexa-Bold"
+        font-size: 1.4em
+
+      .middle
+        font-style: italic
+        font-size: 1.1em
+        color: #CDCDCD
+
+      .low
+        font-style: normal
+        font-size: 1.1em
+
+    .hire
+      padding: 0.5em 0
+      top: -20px
+      position: relative
+    .why
+      text-align: left
+      list-style: square
+      list-style-color: #f90
+      font-size: 0.68em
+
+      a
+        color: #fff
+          
+
 // MISC
 
 ::-webkit-scrollbar 
@@ -881,3 +1063,4 @@ header
   background: #052A3C
 ::-moz-selection
   background: #052A3C
+
